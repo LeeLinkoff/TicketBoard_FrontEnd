@@ -1,0 +1,15 @@
+.main {
+  max-width: 60em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.empty-group {
+  width: 40vw;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 auto;
+  box-shadow: 2px 4px 20px rgba(0,0,0,.1);
+}

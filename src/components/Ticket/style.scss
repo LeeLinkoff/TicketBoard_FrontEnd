@@ -1,0 +1,197 @@
+.ticket {
+    
+    border-radius: 1em;
+    background: white;
+    box-shadow: 2px 4px 20px rgba(0,0,0,.1);
+    margin: 0 auto;
+    margin-bottom: 4em;
+    font-size: 1.2em;
+    
+    pre {
+        white-space: pre-wrap;
+    }
+
+    .ticket-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 1em 2em 1em 2em;
+        border-radius: 1em 1em 0 0;
+        position: sticky;
+        top: 0px;
+        box-shadow: 2px 2px 6px gray;
+
+        &.planning {
+            background: forestgreen;
+        }
+
+        &.bug {
+            background: maroon
+        }
+
+        h2, h4 {
+            font-size: 1em;
+            margin: 0;
+            padding: 0 1em 0 0;
+            color: white;
+        }
+
+        h4 {
+            font-size: .8em;
+            font-weight: 300;
+        }
+
+        .ticket-header-meta {
+            display: flex;
+        }
+
+        .x-mark {
+            color: white;
+            opacity: .9;
+            font-size: 1.8em;
+            font-weight: 900;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .2;
+            }
+        }
+    }
+
+    .ticket-content, .ticket-correspondence {
+
+        padding: .4em 2em;
+
+        h3 {
+            font-size: 1em;
+            margin: 2em 0 .4em 0;
+
+            &:first-of-type {
+                margin-top: .4em;
+            }
+        }
+    }
+    
+    .ticket-correspondence {
+
+        padding-bottom: 2em;
+
+        h5 {
+            margin: 1em 0 0 0;
+            padding: 0;
+
+            span {
+                font-weight: 200;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .ticket-control {
+
+        display: flex;
+        justify-content: space-between;
+        padding: .4em 2em;
+        height: 2.4em;
+        transition: .2s;
+        position: sticky;
+        bottom: 0;
+        background: white;
+        border-radius: 0 0 1em 1em;
+        box-shadow: 0px 0px 12px lighten(gray,40%);
+
+        &.comment {
+            height: 6em;
+        }
+
+        button {
+            border-radius: .5em;
+            padding: .5em 2em;
+            margin-left: 1em;
+            color: white;
+            font-weight: 900;
+            background: green;
+            border: 0;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .6;
+            }
+
+            &.comment-button {
+                background: grey;
+
+                &.active {
+                    background: blue;
+                }
+            }
+        }
+
+        .ticket-meta {
+            font-size: .8em;
+            text-align: right;
+        }
+
+        form {
+            flex-basis: 20em;
+            text-align: right;
+
+            .resolver-control {
+
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                .check-resolve {
+                    
+                    label {
+                        font-weight: 200;
+                        font-size: .8em;
+                        top: -.4em;
+                        left: 4px;
+                        background: white;
+                    }
+                }
+                
+                .initials {
+                    
+                    margin: 0 0 0 1em;
+                    display: flex;
+                    position: relative;
+
+                    input[name="resolver"] {
+                        width: 2em;
+                        padding: .4em .8em;
+                        border-radius: 4px;
+                        border: none;
+                        border: 1px solid gray;
+                    }
+    
+                    label {
+                        position: absolute;
+                        font-weight: 200;
+                        font-size: .8em;
+                        top: -.4em;
+                        left: 4px;
+                        background: white;
+                    }
+                }
+
+            }
+            
+            textarea {
+                position: relative;
+                margin: .4em 0;
+                min-width: 30em;
+            }
+            > div {
+                text-align: right;
+            }
+        }
+    }
+}

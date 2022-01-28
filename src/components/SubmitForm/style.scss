@@ -1,0 +1,58 @@
+form.new {
+    
+    width: 30em;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0 auto;
+    background-color: mintcream;
+    box-shadow: 2px 4px 20px rgba(0,0,0,.5);
+
+    h1 {
+        width: 92%;
+        margin: .6em auto 1em auto;
+        display: flex;
+        justify-content: space-between;
+
+        .x-mark {
+            color: red;
+            font-weight: 900;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .2;
+            }
+        }
+    }
+
+    div {
+        width: 92%;
+        margin: .8em auto;
+    }
+
+    textarea {
+        width: 99%;
+        display: block;
+        min-height: 5em;
+    }
+
+    .submit-control {
+
+        text-align: right;
+        margin: 0 auto;
+
+        button {
+            border-radius: .5em;
+            padding: .5em 2em;
+            color: white;
+            font-weight: 900;
+            background: green;
+            border: 0;
+            cursor: pointer;
+    
+            &:hover {
+                opacity: .6;
+            }
+        }
+
+    }
+}

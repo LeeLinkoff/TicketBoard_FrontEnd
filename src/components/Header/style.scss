@@ -1,0 +1,43 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    background: crimson;
+    display: flex;
+    align-content: flex-end;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.5);
+    padding: 0 0 0 1em;
+
+    h1 {
+        margin: 0 0 0 .5em;
+        font-size: 1.6em;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        top: .2em;
+    }
+
+    .add-button {
+        height: 2em;
+        width: 2em;
+        border-radius: 2em;
+        border: 3px solid white;
+        background: crimson;
+        position: relative;
+        top: 1.1em;
+        cursor: pointer;
+        box-shadow: 2px 4px 10px rgba(0,0,0,.3);
+
+        p {
+            color: white;
+            font-size: 2.4em;
+            line-height: .7em;
+            margin: 0 0 0 .1em;
+            padding: 0;
+        }
+
+        &:hover {
+            background: orange;
+        }
+    }
+}
